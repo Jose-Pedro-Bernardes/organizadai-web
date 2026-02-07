@@ -7,10 +7,10 @@ export default function Header() {
         <figure className={styles.logoContainer}>
             <Image
                 className={styles.logo}
-                src="/logo.png"
+                src="/logotipo.png"
                 alt="Logo da Empresa"
-                width="200"
-                height="200"
+                width="480"
+                height="143"
             />
         </figure>
     </header>

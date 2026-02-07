@@ -1,9 +1,14 @@
 .header{
   width: 100%;
-  height: 220px;
-  background-color: rgb(19, 39, 25);
+  height: 84px;
   display: flex;
   align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-bottom: 2.5px solid rgba(0, 0, 0, 0.096);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logoContainer{
@@ -11,7 +16,6 @@
 }
 
 .logo{
-  margin-left: 30px;
-  width: 220px;
-  height: 220px;
+  width: 180px;
+  height: 45px;
 }
