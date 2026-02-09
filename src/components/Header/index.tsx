@@ -5,17 +5,25 @@ import Link from 'next/link'
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Link href="/">
-        <figure className={styles.logoContainer}>
-            <Image
-                className={styles.logo}
-                src="/logotipo.png"
-                alt="Logo da Empresa"
-                width="400"
-                height="110"
-            />
-        </figure>
-      </Link>
+      <div className={styles.firstSectionHeader}>
+        <Link href="/">
+          <figure className={styles.logoContainer}>
+              <Image
+                  className={styles.logo}
+                  src="/logotipo.png"
+                  alt="Logo da Empresa"
+                  width="400"
+                  height="110"
+              />
+          </figure>
+        </Link>
+        <ul className={styles.menuNav}>
+          <li><Link href="/sobre">Sobre nós</Link></li>
+          <li><Link href="/solucoes">Soluções</Link></li>
+          <li><Link href="/precos">Preços</Link></li>
+          <li><Link href="/suporte">Suporte</Link></li>
+        </ul>
+      </div>
       <div className={styles.loginContainer}>
         <Link href="/entrar" className={styles.login}>
           <Image

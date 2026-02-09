@@ -12,6 +12,20 @@
   z-index: 1000;
 }
 
+.firstSectionHeader{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 100px;
+}
+
+.menuNav{
+  display: flex;
+  align-items: end;
+  height: 23px;
+  gap: 30px;
+}
+
 .logoContainer{
     display: flex;
 }
