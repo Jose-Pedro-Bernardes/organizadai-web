@@ -26,6 +26,10 @@
   gap: 30px;
 }
 
+.linkNav{
+  color: #040086;
+}
+
 .logoContainer{
     display: flex;
 }

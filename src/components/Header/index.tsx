@@ -18,10 +18,10 @@ export default function Header() {
           </figure>
         </Link>
         <ul className={styles.menuNav}>
-          <li><Link href="/sobre">Sobre nós</Link></li>
-          <li><Link href="/solucoes">Soluções</Link></li>
-          <li><Link href="/precos">Preços</Link></li>
-          <li><Link href="/suporte">Suporte</Link></li>
+          <li><Link href="/sobre" className={styles.linkNav}>Sobre nós</Link></li>
+          <li><Link href="/solucoes" className={styles.linkNav}>Soluções</Link></li>
+          <li><Link href="/precos" className={styles.linkNav}>Preços</Link></li>
+          <li><Link href="/suporte" className={styles.linkNav}>Suporte</Link></li>
         </ul>
       </div>
       <div className={styles.loginContainer}>
