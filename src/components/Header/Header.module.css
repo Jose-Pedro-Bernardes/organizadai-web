@@ -21,13 +21,17 @@
 
 .menuNav{
   display: flex;
-  align-items: end;
-  height: 23px;
-  gap: 30px;
+  gap: 35px;
 }
 
 .linkNav{
-  color: #040086;
+  font-size: 1rem;
+  color: #4d5163;
+  
+}
+
+.linkNav:hover{
+  color: #1d13a7;
 }
 
 .logoContainer{
@@ -40,7 +44,7 @@
 }
 
 .loginContainer{
-  gap: 30px;
+  gap: 20px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -48,20 +52,23 @@
 
 .login{
   display: flex;
-  align-items: end;
-  height: 23px;
   gap: 8px;
+  color: #383a47;
   font-weight: 600;
 }
 
 .loginImage{
   width: 20px;
   height: 20px;
+  position: absolute;
 }
 
 .cadastro{
   display: flex;
-  align-items: end;
-  height: 23px;
+  justify-content: space-between;
+  width: 200px;
+  padding: 15px 20px;
+  color: #ec6783;
   font-weight: 600;
+  border: 1px solid #ec6783;
 }
