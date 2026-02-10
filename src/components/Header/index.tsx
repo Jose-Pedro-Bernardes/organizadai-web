@@ -32,8 +32,8 @@ export default function Header() {
           <span>Criar conta grátis</span>
           <Image
               className={styles.setaCadastro}
-              src="/imagemdeseta.png"
-              alt="Logo da Empresa"
+              src="/setadireita.png"
+              alt="seta"
               width="16"
               height="16"
           />
