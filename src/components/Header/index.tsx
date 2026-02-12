@@ -26,7 +26,14 @@ export default function Header() {
       </div>
       <div className={styles.loginContainer}>
         <Link href="/entrar" className={styles.login}>
-          <span>Login</span>
+          <Image
+              className={styles.loginImage}
+              src="/loginImage.png"
+              alt="login"
+              width="341"
+              height="339"
+          />
+          <span className={styles.loginText}>Fazer Login</span>
         </Link>
         <Link href="cadastro" className={styles.cadastro}>
           <span>Criar conta grátis</span>

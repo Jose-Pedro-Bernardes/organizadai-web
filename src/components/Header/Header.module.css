@@ -1,6 +1,6 @@
 .header{
   width: 100%;
-  height: 84px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,6 +10,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  padding-bottom: 6px;
 }
 
 .firstSectionHeader{
@@ -20,6 +21,7 @@
 }
 
 .menuNav{
+  margin-top: 6px;
   display: flex;
   gap: 35px;
 }
@@ -31,6 +33,7 @@
 }
 
 .linkNav:hover{
+  font-weight: 500;
   color: #1d13a7;
 }
 
@@ -44,6 +47,7 @@
 }
 
 .loginContainer{
+  margin-top: 6px;
   gap: 20px;
   height: 100%;
   display: flex;
@@ -52,15 +56,28 @@
 
 .login{
   display: flex;
+  align-items: center;
   gap: 8px;
   color: #383a47;
   font-weight: 600;
+  transition: 0.3s;
+  padding: 0px 5px;
+}
+
+.login:hover{
+  gap: 12px;
+  transition: 0.3s;
+  padding: 0px 10px;
+}
+
+.loginText{
+  height: 16px;
 }
 
 .loginImage{
-  width: 20px;
-  height: 20px;
-  position: absolute;
+  width: 23px;
+  height: 23px;
+
 }
 
 .cadastro{
@@ -71,4 +88,11 @@
   color: #ec6783;
   font-weight: 600;
   border: 1px solid #ec6783;
+  border-radius: 4px;
+  transition: 0.3s;    
+}
+
+.cadastro:hover{
+  padding: 15px 15px;
+  transition: 0.3s;
 }
