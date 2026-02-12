@@ -17,6 +17,46 @@ Este projeto ainda está em desenvolvimento, mas já possui a estrutura base par
 
 ---
 
+---
+
+## 📦 Stacks utilizadas
+
+- **Next.js (App Router)**
+- **TypeScript**
+- **MUI (Material UI)**
+- **Axios**
+- **TanStack Query**
+- **React Hook Form + Zod**
+- **CSS Modules**
+
+---
+
+## 📌 Funcionalidades planejadas
+
+- [ ] Cadastro e login de usuário
+- [ ] Dashboard inicial
+- [ ] Cadastro de clientes
+- [ ] Cadastro de serviços
+- [ ] Agenda de atendimentos
+- [ ] Controle de pagamentos e finanças
+- [ ] Relatórios simples (mensal / semanal)
+
+---
+
+## 🧱 Estrutura do projeto (resumo)
+
+- `src/app/` → páginas e rotas do sistema
+- `src/components/` → componentes reutilizáveis (Header, UI, etc.)
+- `public/` → logos, ícones e imagens do projeto
+
+---
+
+## 🛠️ Scripts disponíveis
+
+```bash
+npm run dev
+
+
 ## 🚀 Início rápido
 
 ### 1. Clonar o repositório
