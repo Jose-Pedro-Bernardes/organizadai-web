@@ -34,8 +34,8 @@ export default function Header() {
               className={styles.setaCadastro}
               src="/setadireita.png"
               alt="seta"
-              width="16"
-              height="16"
+              width="14"
+              height="14"
           />
         </Link> 
       </div>
