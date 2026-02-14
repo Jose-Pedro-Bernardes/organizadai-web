@@ -23,7 +23,17 @@ export default function Header() {
           <li><Link href="/precos" className={styles.linkNav}>Preços</Link></li>
           <li><Link href="/suporte" className={styles.linkNav}>Suporte</Link></li>
         </ul>
+        
       </div>
+      <button className={styles.menuButton} type="button">
+        <Image
+          className={styles.menuIcon}
+          src="/menuImage.png"
+          alt="Abrir menu"
+          width={28}
+          height={28}
+        />
+      </button>
       <div className={styles.loginContainer}>
         <Link href="/entrar" className={styles.login}>
           <Image

@@ -96,3 +96,46 @@
   padding: 15px 15px;
   transition: 0.3s;
 }
+
+.menuButton {
+  display: none; /* escondido no desktop */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.menuButton:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.menuIcon {
+  width: 26px;
+  height: 26px;
+}
+
+@media (max-width: 1000px) {
+
+  .menuNav {
+    display: none; /* some os links */
+  }
+  .cadastro{
+    display: none;
+  }
+
+  .loginContainer{
+    display: none;
+  }
+
+  .menuButton {
+    display: flex; /* aparece o hamburguer */
+  }
+
+  .firstSectionHeader {
+    gap: 20px; /* ajusta espaço */
+  }
+}
