@@ -118,7 +118,7 @@
   height: 26px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1150px) {
 
   .menuNav {
     display: none; /* some os links */
