@@ -118,13 +118,14 @@
   height: 26px;
 }
 
+.MenuNavMobile{
+  display: none;
+}
+
 @media (max-width: 1150px) {
 
   .menuNav {
     display: none; /* some os links */
-  }
-  .cadastro{
-    display: none;
   }
 
   .loginContainer{
@@ -133,9 +134,18 @@
 
   .menuButton {
     display: flex; /* aparece o hamburguer */
+    position: relative;
   }
 
   .firstSectionHeader {
     gap: 20px; /* ajusta espaço */
+  }
+
+  .MenuNavMobile{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
   }
 }
