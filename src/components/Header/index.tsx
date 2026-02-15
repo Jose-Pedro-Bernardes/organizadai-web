@@ -1,8 +1,19 @@
+"use client";
+
 import Image from 'next/image'
 import styles from './Header.module.css'
 import Link from 'next/link'
+import { useState } from "react";
+
+
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  function toggleMenu() {
+    setMenuOpen((prev) => !prev);
+  }
+
   return (
     <header className={styles.header}>
       <div className={styles.firstSectionHeader}>
@@ -25,7 +36,7 @@ export default function Header() {
         </ul>
         
       </div>
-      <button className={styles.menuButton} type="button">
+      <button className={styles.menuButton} type="button" onClick={toggleMenu}>
         <Image
           className={styles.menuIcon}
           src="/menuImage.png"
@@ -56,32 +67,35 @@ export default function Header() {
           />
         </Link> 
       </div>
-      <ul className={styles.MenuNavMobile}>
-          <li><Link href="/sobre" className={styles.linkNav}>Sobre nós</Link></li>
-          <li><Link href="/solucoes" className={styles.linkNav}>Soluções</Link></li>
-          <li><Link href="/precos" className={styles.linkNav}>Preços</Link></li>
-          <li><Link href="/suporte" className={styles.linkNav}>Suporte</Link></li>
+      {menuOpen && (
+        <nav className={styles.MenuNavMobile}>
+          <Link href="/sobre" className={styles.linkNav}>Sobre nós</Link>
+          <Link href="/solucoes" className={styles.linkNav}>Soluções</Link>
+          <Link href="/precos" className={styles.linkNav}>Preços</Link>
+          <Link href="/suporte" className={`${styles.linkNav} ${styles.linkNavLast}`}>Suporte</Link>
+
           <Link href="/entrar" className={styles.login}>
             <Image
-                className={styles.loginImage}
-                src="/loginImage.png"
-                alt="login"
-                width="341"
-                height="339"
+                  className={styles.loginImage}
+                  src="/loginImage.png"
+                  alt="login"
+                  width="341"
+                  height="339"
             />
             <span className={styles.loginText}>Fazer Login</span>
-        </Link>
-        <Link href="cadastro" className={styles.cadastro}>
-            <span>Criar conta grátis</span>
-            <Image
-              className={styles.setaCadastro}
-              src="/setadireita.png"
-              alt="seta"
-              width="14"
-              height="14"
-            />
-        </Link> 
-      </ul>
+          </Link>
+          <Link href="cadastro" className={styles.cadastro}>
+              <span>Criar conta grátis</span>
+              <Image
+                className={styles.setaCadastro}
+                src="/setadireita.png"
+                alt="seta"
+                width="14"
+                height="14"
+              />
+          </Link> 
+        </nav>
+      )}
     </header>
   )
 }

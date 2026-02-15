@@ -142,10 +142,67 @@
   }
 
   .MenuNavMobile{
+    position: absolute;
     display: flex;
     flex-direction: column;
-    position: absolute;
+    align-items: center;
+    width: 300px;
+    height: 485px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border:1px solid #9c9c9c57;
+    border-bottom: none;
     top: 100%;
     right: 0;
+    gap: 1px;
   }
+
+  .linkNav{
+    border-bottom: 1px solid #9c9c9c57;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+  .linkNavLast{
+    border-bottom: 1px solid #9c9c9c57;
+  }
+  .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #1100ff18;
+    border: 1px solid  #1100ff3b;
+    border-radius: 0;
+  }
+  .cadastro{
+    display: flex;
+    border-radius: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 80px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .cadastro:hover{
+    padding: 0px;
+    gap: 15px;
+    transition: 0.3s;
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .MenuNavMobile{
+    width: 100%;
+  }
+
 }
