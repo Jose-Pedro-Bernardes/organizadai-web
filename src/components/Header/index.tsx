@@ -15,6 +15,7 @@ export default function Header() {
   }
 
   return (
+
     <header className={styles.header}>
       <div className={styles.firstSectionHeader}>
         <Link href="/">
@@ -97,5 +98,6 @@ export default function Header() {
         </nav>
       )}
     </header>
+    
   )
 }
