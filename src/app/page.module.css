@@ -8,10 +8,7 @@
 
 .main {
   display: flex;
-  background-color: var(--foreground);
   width: 100%;
   height: 100vh;
-  border-radius: 12px;
-  text-align: center;
 }
 
