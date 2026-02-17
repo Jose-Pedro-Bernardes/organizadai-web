@@ -11,6 +11,7 @@
   top: 0;
   z-index: 1000;
   padding-bottom: 6px;
+  background-color: #ffffff;
 }
 
 .firstSectionHeader{
@@ -85,9 +86,9 @@
   justify-content: space-between;
   width: 200px;
   padding: 15px 20px;
-  color: #ec6783;
+  color: #28BE25;
   font-weight: 600;
-  border: 1px solid #ec6783;
+  border: 1px solid #28BE25;
   border-radius: 4px;
   transition: 0.3s;    
 }
