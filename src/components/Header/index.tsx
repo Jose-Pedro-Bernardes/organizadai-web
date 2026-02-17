@@ -61,7 +61,7 @@ export default function Header() {
           <span>Criar conta grátis</span>
           <Image
               className={styles.setaCadastro}
-              src="/setadireita.png"
+              src="/setaDireitaHeader.png"
               alt="seta"
               width="14"
               height="14"
@@ -89,7 +89,7 @@ export default function Header() {
               <span>Criar conta grátis</span>
               <Image
                 className={styles.setaCadastro}
-                src="/setadireita.png"
+                src="/setaDireitaHeader.png"
                 alt="seta"
                 width="14"
                 height="14"

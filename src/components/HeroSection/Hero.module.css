@@ -1,0 +1,64 @@
+.heroSection{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    width: 850px;
+    font-size: 3.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 30px;
+    line-height: 60px;
+}
+
+.titleItalian{
+    color: #54C752;
+    font-style: italic;
+}
+
+.blue{
+    color: #026BC5;
+}
+
+.green{
+    color: #6CCF6A;
+}
+
+.heroDescription{
+    width: 720px;
+    font-size: 1.25rem;
+    color: #4D5163;
+    margin-bottom: 40px;
+}
+
+.cadastro{
+    width: 387px;
+    height: 86px;
+    background-color: #026BC5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.563rem;
+    font-weight: 600;
+    gap: 25px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.cadastro:hover{
+    background-color: #027ce7;
+    gap: 35px;
+}
+
+
+.setaCadastro{
+    width: 26;
+    height: 26;
+}
+
+

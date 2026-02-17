@@ -10,17 +10,26 @@ export default function HeroSection() {
 
     return (
         
-        <section>
-          <h1 className={styles.title}>Organize clientes, agenda e pagamentos em um só lugar</h1>
-          <p>Com o OrganizaDaí, você centraliza tudo o que precisa para gerenciar seus atendimentos: clientes, agenda, serviços e pagamentos — sem planilhas e sem bagunça.</p>
+        <section className={styles.heroSection}>
+          <h1 className={styles.title}>
+          Organize <span className={styles.titleItalian}> clientes, agenda e pagamentos </span> 
+          em um só lugar com o <span className={styles.blue}>Organiza</span>
+          <span className={styles.green}>Daí</span>
+          </h1>
+          
+          <p className={styles.heroDescription}>
+            Você centraliza tudo o que precisa para gerenciar seus atendimentos:
+            clientes, agenda, serviços e pagamentos — sem planilhas e sem bagunça.
+          </p>
+
           <Link href="cadastro" className={styles.cadastro}>
             <span>Criar conta grátis</span>
             <Image
               className={styles.setaCadastro}
-              src="/setadireita.png"
+              src="/setaDireitaHero.png"
               alt="seta"
-              width="14"
-              height="14"
+              width="100"
+              height="100"
             />
           </Link>
         </section>
