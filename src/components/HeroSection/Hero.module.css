@@ -13,6 +13,7 @@
 .title {
     width: 850px;
     font-size: 3.125rem;
+    text-align: center;
     font-weight: 600;
     color: var(--text-primary);
     margin-bottom: 30px;
@@ -35,6 +36,7 @@
 .heroDescription{
     width: 720px;
     font-size: 1.25rem;
+    text-align: center;
     color: #4D5163;
     margin-bottom: 40px;
 }
@@ -94,7 +96,7 @@
 
     .heroSection{
         padding: 0 30px;
-        padding-top: 60px;
+        padding-top: 40px;
     }
 
 .title {
@@ -112,7 +114,7 @@
 
     .heroSection{
         padding: 0 20px;
-        padding-top: 60px;
+        padding-top: 40px;
     }
 
     .title{
