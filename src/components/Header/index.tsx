@@ -23,21 +23,21 @@ export default function Header() {
               <Image
                   className={styles.logo}
                   src="/logotipo.png"
-                  alt="Logo da Empresa"
+                  alt="Logo OrganizaDaí"
                   width="400"
                   height="110"
               />
           </figure>
         </Link>
         <ul className={styles.menuNav}>
-          <li><Link href="/sobre" className={styles.linkNav}>Sobre nós</Link></li>
-          <li><Link href="/solucoes" className={styles.linkNav}>Soluções</Link></li>
-          <li><Link href="/precos" className={styles.linkNav}>Preços</Link></li>
-          <li><Link href="/suporte" className={styles.linkNav}>Suporte</Link></li>
+          <li><Link href="/sobre" className={styles.linkNav} aria-label="Saiba mais sobre o OrganizaDaí">Sobre nós</Link></li>
+          <li><Link href="/solucoes" className={styles.linkNav} aria-label="Conheça nossas soluções">Soluções</Link></li>
+          <li><Link href="/precos" className={styles.linkNav} aria-label="Veja nossos planos e preços">Preços</Link></li>
+          <li><Link href="/suporte" className={styles.linkNav} aria-label="Acesse nosso suporte">Suporte</Link></li>
         </ul>
         
       </div>
-      <button className={styles.menuButton} type="button" onClick={toggleMenu}>
+      <button className={styles.menuButton} type="button" onClick={toggleMenu} aria-label="Abrir menu de navegação" aria-expanded={menuOpen}>
         <Image
           className={styles.menuIcon}
           src="/menuImage.png"
@@ -47,7 +47,7 @@ export default function Header() {
         />
       </button>
       <div className={styles.loginContainer}>
-        <Link href="/entrar" className={styles.login}>
+        <Link href="/entrar" className={styles.login} aria-label="Acessar área de login">
           <Image
               className={styles.loginImage}
               src="/loginImage.png"
@@ -57,7 +57,7 @@ export default function Header() {
           />
           <span className={styles.loginText}>Fazer Login</span>
         </Link>
-        <Link href="cadastro" className={styles.cadastro}>
+        <Link href="cadastro" className={styles.cadastro} aria-label="Criar conta gratuita no OrganizaDaí">
           <span>Criar conta grátis</span>
           <Image
               className={styles.setaCadastro}
@@ -70,12 +70,12 @@ export default function Header() {
       </div>
       {menuOpen && (
         <nav className={styles.MenuNavMobile}>
-          <Link href="/sobre" className={styles.linkNav}>Sobre nós</Link>
-          <Link href="/solucoes" className={styles.linkNav}>Soluções</Link>
-          <Link href="/precos" className={styles.linkNav}>Preços</Link>
-          <Link href="/suporte" className={`${styles.linkNav} ${styles.linkNavLast}`}>Suporte</Link>
+          <Link href="/sobre" className={styles.linkNav} aria-label="Saiba mais sobre o OrganizaDaí">Sobre nós</Link>
+          <Link href="/solucoes" className={styles.linkNav} aria-label="Conheça nossas soluções">Soluções</Link>
+          <Link href="/precos" className={styles.linkNav} aria-label="Veja nossos planos e preços">Preços</Link>
+          <Link href="/suporte" className={`${styles.linkNav} ${styles.linkNavLast}`} aria-label="Acesse nosso suporte">Suporte</Link>
 
-          <Link href="/entrar" className={styles.login}>
+          <Link href="/entrar" className={styles.login} aria-label="Acessar área de login">
             <Image
                   className={styles.loginImage}
                   src="/loginImage.png"
@@ -85,7 +85,7 @@ export default function Header() {
             />
             <span className={styles.loginText}>Fazer Login</span>
           </Link>
-          <Link href="cadastro" className={styles.cadastro}>
+          <Link href="cadastro" className={styles.cadastro} aria-label="Criar conta gratuita no OrganizaDaí">
               <span>Criar conta grátis</span>
               <Image
                 className={styles.setaCadastro}

@@ -22,7 +22,7 @@ export default function HeroSection() {
             clientes, agenda, serviços e pagamentos — sem planilhas e sem bagunça.
           </p>
 
-          <Link href="cadastro" className={styles.cadastro}>
+          <Link href="cadastro" className={styles.cadastro} aria-label="Criar conta gratuita no OrganizaDaí">
             <span>Criar conta grátis</span>
             <Image
               className={styles.setaCadastro}
