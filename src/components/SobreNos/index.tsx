@@ -12,42 +12,42 @@ export default function SobreNos() {
       src="/bannerAboutPage.jpg"
       alt="Profissional organizando atendimentos no sistema"
       width={600}
-      height={400}
+      height={500}
     />
 
-    <div>
-      <p>Sobre o OrganizaDaí</p>
+    <div className={styles.aboutSection}>
+      <p className={styles.subtitle}>Sobre o OrganizaDaí</p>
 
-      <h3>
-        Uma solução criada para simplificar a rotina de prestadores de serviço
+      <h3 className={styles.title}>
+        Uma solução criada para simplificar a rotina
       </h3>
 
-      <p>
+      <p className={styles.aboutText}>
         O OrganizaDaí nasceu com o objetivo de ajudar profissionais autônomos e
         prestadores de serviço a organizarem seus clientes, agendamentos e
         pagamentos em um único sistema simples e eficiente.
       </p>
 
-      <p>
+      <p className={styles.aboutText}>
         Sabemos que muitos profissionais ainda utilizam planilhas, anotações
         manuais ou aplicativos desconectados entre si. Isso gera retrabalho,
         perda de informações e falta de controle financeiro.
       </p>
 
-      <p>
+      <p className={styles.aboutText}>
         Pensando nisso, desenvolvemos uma plataforma moderna que centraliza tudo
         o que você precisa para administrar seu negócio com mais organização e
         profissionalismo.
       </p>
 
-      <ul>
+      <ul className={styles.aboutList}>
         <li>✔ Cadastro e gestão de clientes</li>
         <li>✔ Controle de agenda e atendimentos</li>
         <li>✔ Registro de serviços prestados</li>
         <li>✔ Acompanhamento de pagamentos e finanças</li>
       </ul>
 
-      <p>
+      <p className={styles.aboutText}>
         Nosso propósito é oferecer uma ferramenta prática, intuitiva e acessível
         para que você foque no que realmente importa: atender bem seus clientes
         e crescer seu negócio.
