@@ -11,8 +11,8 @@ export default function SobreNos() {
       className={styles.logo}
       src="/bannerAboutPage.jpg"
       alt="Profissional organizando atendimentos no sistema"
-      width={600}
-      height={500}
+      width={620}
+      height={550}
     />
 
     <div className={styles.aboutSection}>
@@ -41,10 +41,10 @@ export default function SobreNos() {
       </p>
 
       <ul className={styles.aboutList}>
-        <li>✔ Cadastro e gestão de clientes</li>
-        <li>✔ Controle de agenda e atendimentos</li>
-        <li>✔ Registro de serviços prestados</li>
-        <li>✔ Acompanhamento de pagamentos e finanças</li>
+        <li className={styles.aboutLine}><span className={styles.point}>•</span> Controle de agenda e atendimentos</li>
+        <li className={styles.aboutLine}><span className={styles.point}>•</span> Cadastro e gestão de clientes</li>
+        <li className={styles.aboutLine}><span className={styles.point}>•</span> Registro de serviços prestados</li>
+        <li className={styles.aboutLine}><span className={styles.point}>•</span> Acompanhamento de pagamentos e finanças</li>
       </ul>
 
       <p className={styles.aboutText}>

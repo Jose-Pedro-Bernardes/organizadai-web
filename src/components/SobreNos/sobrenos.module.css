@@ -31,8 +31,20 @@
 
 .aboutText{
     color: rgb(58, 58, 58);
+    line-height: 20px;
 }
 
 .aboutList{
     color: rgb(58, 58, 58);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aboutLine{
+    font-weight: 500; 
+}
+
+.point{
+    margin-right: 10px;
 }
