@@ -8,7 +8,7 @@ export default function SobreNos() {
 
     <section className={styles.aboutPage}>
     <Image
-      className={styles.logo}
+      className={styles.aboutBanner}
       src="/bannerAboutPage.jpg"
       alt="Profissional organizando atendimentos no sistema"
       width={620}
@@ -48,7 +48,7 @@ export default function SobreNos() {
       </ul>
 
       <p className={styles.aboutText}>
-        Nosso propósito é oferecer uma ferramenta prática, intuitiva e acessível
+        📈 Nosso propósito é oferecer uma ferramenta prática, intuitiva e acessível
         para que você foque no que realmente importa: atender bem seus clientes
         e crescer seu negócio.
       </p>

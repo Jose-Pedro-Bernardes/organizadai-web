@@ -3,9 +3,11 @@
     flex-direction: column;
     gap: 20px;
     width: 40%;
+    max-width: 600px;
+    padding: 0 30px;
 }
 
-.logo{
+.aboutBanner{
     border-radius: 20px;
 }
 
@@ -47,4 +49,18 @@
 
 .point{
     margin-right: 10px;
+}
+
+@media(max-width: 1250px){
+    .aboutPage{
+        flex-direction: column;
+    }
+
+    .aboutBanner{
+        width: 80%;
+    }
+    .aboutSection{
+        width: 80%;
+        max-width: 100%;
+    }
 }
