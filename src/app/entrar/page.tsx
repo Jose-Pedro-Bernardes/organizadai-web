@@ -3,7 +3,7 @@ import styles from "./entrar.module.css";
 export default function Entrar() {
   return (
     <div>
-      <main>
+      <main className={styles.main}>
         <div className={styles.loginContainer}>
           <div className={styles.loginCard}>
             <h1 className={styles.loginTitle}>Fazer Login</h1>
