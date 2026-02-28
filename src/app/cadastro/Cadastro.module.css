@@ -1,3 +1,7 @@
+.main{
+  background: linear-gradient(135deg, #026BC5 0%, #59C757 100%);
+}
+
 .signupContainer {
   display: flex;
   justify-content: center;
@@ -5,10 +9,11 @@
   width: 100%;
   min-height: 100vh;
   padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .signupCard {
-  background: white;
+  background: rgba(255, 255, 255, 0.897);
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   padding: 48px;

@@ -2,7 +2,7 @@ import styles from "./cadastro.module.css";
 
 export default function Cadastro() {
   return (
-    <div>
+    <div className={styles.main}>
       <main>
         <div className={styles.signupContainer}>
           <div className={styles.signupCard}>
@@ -18,17 +18,6 @@ export default function Cadastro() {
                     id="firstName"
                     className={styles.formInput}
                     placeholder="Seu nome"
-                    required
-                  />
-                </div>
-                
-                <div className={styles.formGroup}>
-                  <label htmlFor="lastName" className={styles.formLabel}>Sobrenome</label>
-                  <input
-                    type="text"
-                    id="lastName"
-                    className={styles.formInput}
-                    placeholder="Seu sobrenome"
                     required
                   />
                 </div>
