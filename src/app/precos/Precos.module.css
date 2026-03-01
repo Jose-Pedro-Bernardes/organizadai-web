@@ -1,0 +1,304 @@
+.precosContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.planosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.planoCard {
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.planoCard:hover {
+  border-color: #026BC5;
+  box-shadow: 0 8px 32px rgba(2, 107, 197, 0.15);
+  transform: translateY(-4px);
+}
+
+.planoPopular {
+  border-color: #026BC5;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.popularBadge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #026BC5;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.planoNome {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.planoDescricao {
+  font-size: 1rem;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.planoPreco {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.precoMoeda {
+  font-size: 1.5rem;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.precoValor {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 4px;
+}
+
+.precoPeriodo {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.planoFeatures {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.featureItem:last-child {
+  border-bottom: none;
+}
+
+.featureIcon {
+  color: #54C752;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.planoButton {
+  width: 100%;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.buttonOutline {
+  background: white;
+  color: #026BC5;
+  border: 2px solid #026BC5;
+}
+
+.buttonOutline:hover {
+  background: #026BC5;
+  color: white;
+}
+
+.buttonPrimary {
+  background: #026BC5;
+  color: white;
+}
+
+.buttonPrimary:hover {
+  background: #027ce7;
+}
+
+.faqSection {
+  margin-top: 80px;
+}
+
+.faqTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faqList {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.faqQuestion {
+  width: 100%;
+  padding: 20px 24px;
+  background: white;
+  border: none;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.faqQuestion:hover {
+  background: #f9fafb;
+}
+
+.faqToggle {
+  font-size: 1.5rem;
+  color: #026BC5;
+  transition: transform 0.3s ease;
+}
+
+.faqAnswer {
+  padding: 0 24px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faqAnswer.active {
+  padding: 20px 24px;
+  max-height: 200px;
+}
+
+.faqText {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.ctaSection {
+  background: linear-gradient(135deg, #026BC5 0%, #027ce7 100%);
+  border-radius: 16px;
+  padding: 60px 40px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.ctaSubtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 32px;
+}
+
+.ctaButton {
+  background: white;
+  color: #026BC5;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .precosContainer {
+    padding: 60px 16px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .planosGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .planoCard {
+    padding: 24px;
+  }
+  
+  .precoValor {
+    font-size: 3rem;
+  }
+  
+  .faqTitle {
+    font-size: 1.75rem;
+  }
+  
+  .ctaSection {
+    padding: 40px 24px;
+  }
+  
+  .ctaTitle {
+    font-size: 2rem;
+  }
+}
