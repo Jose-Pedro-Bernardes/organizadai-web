@@ -1,0 +1,348 @@
+
+.main {
+  width: 100%;
+  background: linear-gradient(135deg, #1f6aac 0%, #149712 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.suporteContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.headerSection {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FFF;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #e4e4e4;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.categoriasGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.categoriaCard {
+  background: rgba(255, 255, 255, 0.856);
+  border: 5px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.categoriaCard:hover {
+  background: #f0f0f0;
+  border-color: #026BC5;
+  box-shadow: 0 8px 24px rgba(2, 107, 197, 0.1);
+  transform: translateY(-2px);
+}
+
+.categoriaIcon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 16px;
+  background: linear-gradient(135deg, #026BC5 0%, #027ce7 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.categoriaTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #004f94;
+  margin-bottom: 8px;
+}
+
+.categoriaDescription {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.atendimentoSection {
+  border-radius: 16px;
+  padding: 48px;
+  margin-bottom: 60px;
+}
+
+.atendimentoTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.atendimentoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.atendimentoCard {
+  background: rgba(255, 255, 255, 0.856);
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+
+.atendimentoCard.featured {
+  border-color: #026BC5;
+  box-shadow: 0 8px 32px rgba(2, 107, 197, 0.15);
+  background: #f7f6f6;
+}
+
+.atendimentoCard:hover{
+    background: #f7f6f6;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(2, 107, 197, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.atendimentoBadge {
+  display: inline-block;
+  background: #026BC5;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.atendimentoNome {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #026BC5;
+  margin-bottom: 8px;
+}
+
+.atendimentoDescricao {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.atendimentoFeatures {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.atendimentoFeature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.atendimentoFeatureIcon {
+  color: #54C752;
+  font-size: 1rem;
+}
+
+.atendimentoButton {
+  width: 100%;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.buttonPrimary {
+  background: #026BC5;
+  color: white;
+}
+
+.buttonPrimary:hover {
+  background: #027ce7;
+}
+
+.buttonOutline {
+  background: white;
+  color: #026BC5;
+  border: 2px solid #026BC5;
+}
+
+.buttonOutline:hover {
+  background: #026BC5;
+  color: white;
+}
+
+.faqsSection {
+  margin-bottom: 60px;
+}
+
+.faqsTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faqsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faqCard {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.faqQuestion {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #026BC5;
+  margin-bottom: 12px;
+}
+
+.faqAnswer {
+  font-size: 0.95rem;
+  color: #566279;
+  line-height: 1.6;
+}
+
+.contatoSection {
+  background: linear-gradient(135deg, #026BC5 0%, #027ce7 100%);
+  border-radius: 16px;
+  padding: 48px;
+  text-align: center;
+  color: white;
+}
+
+.contatoTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.contatoSubtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 32px;
+}
+
+.contatoButtons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contatoButton {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttonWhite {
+  background: white;
+  color: #026BC5;
+}
+
+.buttonWhite:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.buttonTransparent {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.buttonTransparent:hover {
+  background: white;
+  color: #026BC5;
+}
+
+@media (max-width: 768px) {
+  .suporteContainer {
+    padding: 60px 16px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .categoriasGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .atendimentoSection {
+    padding: 32px 24px;
+  }
+  
+  .atendimentoGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .faqsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contatoSection {
+    padding: 32px 24px;
+  }
+  
+  .contatoButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contatoButton {
+    width: 100%;
+    max-width: 300px;
+  }
+}
