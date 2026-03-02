@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./precos.module.css";
+import Link from "next/link";
 
 export default function Precos() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -83,88 +84,90 @@ export default function Precos() {
   ];
 
   return (
-    <div className={styles.precosContainer}>
-      <header className={styles.headerSection}>
-        <h1 className={styles.title}>Planos que crescem com seu negócio</h1>
-        <p className={styles.subtitle}>
-          Escolha o plano perfeito para gerenciar seus clientes, agenda e pagamentos de forma simples e eficiente
-        </p>
-      </header>
+    <main className={styles.main}>
+      <div className={styles.precosContainer}>
+        <header className={styles.headerSection}>
+          <h1 className={styles.title}>Planos que crescem com seu negócio</h1>
+          <p className={styles.subtitle}>
+            Escolha o plano perfeito para gerenciar seus clientes, agenda e pagamentos de forma simples e eficiente
+          </p>
+        </header>
 
-      <section className={styles.planosGrid}>
-        {planos.map((plano, index) => (
-          <div 
-            key={index} 
-            className={`${styles.planoCard} ${plano.popular ? styles.planoPopular : ""}`}
-          >
-            {plano.popular && (
-              <div className={styles.popularBadge}>Mais Popular</div>
-            )}
-            
-            <h3 className={styles.planoNome}>{plano.nome}</h3>
-            <p className={styles.planoDescricao}>{plano.descricao}</p>
-            
-            <div className={styles.planoPreco}>
-              <span className={styles.precoMoeda}>R$</span>
-              <span className={styles.precoValor}>{plano.preco}</span>
-              <span className={styles.precoPeriodo}>{plano.periodo}</span>
-            </div>
-            
-            <ul className={styles.planoFeatures}>
-              {plano.features.map((feature, featureIndex) => (
-                <li key={featureIndex} className={styles.featureItem}>
-                  <span className={styles.featureIcon}>✓</span>
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-            
-            <button className={`${styles.planoButton} ${
-              plano.buttonType === 'primary' ? styles.buttonPrimary : styles.buttonOutline
-            }`}>
-              {plano.buttonText}
-            </button>
-          </div>
-        ))}
-      </section>
-
-      <section className={styles.faqSection}>
-        <h2 className={styles.faqTitle}>Perguntas Frequentes</h2>
-        
-        <div className={styles.faqList}>
-          {faqs.map((faq, index) => (
-            <div key={index} className={styles.faqItem}>
-              <button 
-                className={styles.faqQuestion}
-                onClick={() => toggleFaq(index)}
-              >
-                <span>{faq.question}</span>
-                <span className={`${styles.faqToggle} ${
-                  activeFaq === index ? styles.active : ""
-                }`}>
-                  {activeFaq === index ? '−' : '+'}
-                </span>
-              </button>
+        <section className={styles.planosGrid}>
+          {planos.map((plano, index) => (
+            <div 
+              key={index} 
+              className={`${styles.planoCard} ${plano.popular ? styles.planoPopular : ""}`}
+            >
+              {plano.popular && (
+                <div className={styles.popularBadge}>Mais Popular</div>
+              )}
               
-              <div className={`${styles.faqAnswer} ${
-                activeFaq === index ? styles.active : ""
-              }`}>
-                <p className={styles.faqText}>{faq.answer}</p>
+              <h3 className={styles.planoNome}>{plano.nome}</h3>
+              <p className={styles.planoDescricao}>{plano.descricao}</p>
+              
+              <div className={styles.planoPreco}>
+                <span className={styles.precoMoeda}>R$</span>
+                <span className={styles.precoValor}>{plano.preco}</span>
+                <span className={styles.precoPeriodo}>{plano.periodo}</span>
               </div>
+              
+              <ul className={styles.planoFeatures}>
+                {plano.features.map((feature, featureIndex) => (
+                  <li key={featureIndex} className={styles.featureItem}>
+                    <span className={styles.featureIcon}>✓</span>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              
+              <button className={`${styles.planoButton} ${
+                plano.buttonType === 'primary' ? styles.buttonPrimary : styles.buttonOutline
+              }`}>
+                {plano.buttonText}
+              </button>
             </div>
           ))}
-        </div>
-      </section>
+        </section>
 
-      <section className={styles.ctaSection}>
-        <h2 className={styles.ctaTitle}>Pronto para organizar seu negócio?</h2>
-        <p className={styles.ctaSubtitle}>
-          Junte-se a milhares de profissionais que já transformaram sua gestão com o OrganizaDaí
-        </p>
-        <button className={styles.ctaButton}>
-          Começar agora gratuitamente
-        </button>
-      </section>
-    </div>
+        <section className={styles.faqSection}>
+          <h2 className={styles.faqTitle}>Perguntas Frequentes</h2>
+          
+          <div className={styles.faqList}>
+            {faqs.map((faq, index) => (
+              <div key={index} className={styles.faqItem}>
+                <button 
+                  className={styles.faqQuestion}
+                  onClick={() => toggleFaq(index)}
+                >
+                  <span>{faq.question}</span>
+                  <span className={`${styles.faqToggle} ${
+                    activeFaq === index ? styles.active : ""
+                  }`}>
+                    {activeFaq === index ? '−' : '+'}
+                  </span>
+                </button>
+                
+                <div className={`${styles.faqAnswer} ${
+                  activeFaq === index ? styles.active : ""
+                }`}>
+                  <p className={styles.faqText}>{faq.answer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.ctaSection}>
+          <h2 className={styles.ctaTitle}>Pronto para organizar seu negócio?</h2>
+          <p className={styles.ctaSubtitle}>
+            Junte-se a milhares de profissionais que já transformaram sua gestão com o OrganizaDaí
+          </p>
+          <Link href="/cadastro" className={styles.ctaButton}>
+            Começar agora gratuitamente
+          </Link>
+        </section>
+      </div>
+    </main>
   );
 }
