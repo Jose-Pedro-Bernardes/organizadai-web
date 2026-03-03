@@ -7,7 +7,7 @@
   padding-left: 30px;
   padding-right: 30px;
   border-bottom: 2.5px solid rgba(0, 0, 0, 0.096);
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   padding-bottom: 6px;
