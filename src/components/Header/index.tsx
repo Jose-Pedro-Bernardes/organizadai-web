@@ -31,7 +31,7 @@ export default function Header() {
         </Link>
         <ul className={styles.menuNav}>
           <li><Link href="/funcionalidades" className={styles.linkNav} aria-label="Conheça nossas Funcionalidades">Funcionalidades</Link></li>
-          <li><Link href="/sobre" className={styles.linkNav} aria-label="Saiba mais sobre o OrganizaDaí">Para Quem É</Link></li>
+          <li><Link href="/paraqueme" className={styles.linkNav} aria-label="Saiba mais sobre o OrganizaDaí">Para Quem É</Link></li>
           <li><Link href="/precos" className={styles.linkNav} aria-label="Veja nossos planos e preços">Preços</Link></li>
           <li><Link href="/suporte" className={styles.linkNav} aria-label="Acesse nosso suporte">Suporte</Link></li>
         </ul>
