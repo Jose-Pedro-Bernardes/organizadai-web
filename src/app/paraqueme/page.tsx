@@ -127,114 +127,116 @@ export default function Paraqueme() {
   ];
 
   return (
-    <div className={styles.paraquemeContainer}>
-      <header className={styles.heroSection}>
-        <h1 className={styles.heroTitle}>
-          OrganizaDaí é para <span className={styles.highlight}>quem transforma</span> trabalho em paixão
-        </h1>
-        <p className={styles.heroSubtitle}>
-          Seja você um profissional autônomo, clínica ou prestador de serviços, 
-          nossa plataforma foi desenhada para simplificar sua gestão e impulsionar seu crescimento.
-        </p>
-        
-        <div className={styles.heroStats}>
-          <div className={styles.statItem}>
-            <span className={styles.statNumber}>10.000+</span>
-            <span className={styles.statLabel}>Profissionais Ativos</span>
-          </div>
-          <div className={styles.statItem}>
-            <span className={styles.statNumber}>50.000+</span>
-            <span className={styles.statLabel}>Clientes Atendidos</span>
-          </div>
-          <div className={styles.statItem}>
-            <span className={styles.statNumber}>98%</span>
-            <span className={styles.statLabel}>Satisfação</span>
-          </div>
-        </div>
-      </header>
-
-      <section className={styles.perfisSection}>
-        <h2 className={styles.sectionTitle}>Para Qual Perfil?</h2>
-        <p className={styles.sectionSubtitle}>
-          Conheça os perfis de profissionais que já transformaram seus negócios com o OrganizaDaí
-        </p>
-        
-        <div className={styles.perfisGrid}>
-          {perfis.map((perfil, index) => (
-            <div key={index} className={styles.perfilCard}>
-              <div className={styles.perfilIcon}>{perfil.icon}</div>
-              <h3 className={styles.perfilTitle}>{perfil.title}</h3>
-              <p className={styles.perfilDescription}>{perfil.description}</p>
-              
-              <ul className={styles.perfilFeatures}>
-                {perfil.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className={styles.perfilFeature}>
-                    <span className={styles.perfilFeatureIcon}>✓</span>
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className={styles.casosUsoSection}>
-        <h2 className={styles.sectionTitle}>Como Pode Ser Usado</h2>
-        <p className={styles.sectionSubtitle}>
-          Descubra as principais funcionalidades que vão revolucionar sua gestão diária
-        </p>
-        
-        <div className={styles.casosGrid}>
-          {casosUso.map((caso, index) => (
-            <div key={index} className={styles.casoCard}>
-              <div className={styles.casoIcon}>{caso.icon}</div>
-              <h3 className={styles.casoTitle}>{caso.title}</h3>
-              <p className={styles.casoDescription}>{caso.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className={styles.beneficiosSection}>
-        <h2 className={styles.sectionTitle}>Benefícios Transformadores</h2>
-        <p className={styles.sectionSubtitle}>
-          Mais do que um software, uma solução completa para seu negócio prosperar
-        </p>
-        
-        <div className={styles.beneficiosGrid}>
-          {beneficios.map((beneficio, index) => (
-            <div key={index} className={styles.beneficioCard}>
-              <div className={styles.beneficioNumber}>{beneficio.number}</div>
-              <h3 className={styles.beneficioTitle}>{beneficio.title}</h3>
-              <p className={styles.beneficioDescription}>{beneficio.description}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className={styles.ctaSection}>
-        <div className={styles.ctaContent}>
-          <h2 className={styles.ctaTitle}>
-            Pronto para transformar sua gestão?
-          </h2>
-          <p className={styles.ctaSubtitle}>
-            Junte-se a milhares de profissionais que já escolheram o OrganizaDaí 
-            para organizar e crescer seus negócios
+    <main className={styles.main}>
+      <div className={styles.paraquemeContainer}>
+        <header className={styles.heroSection}>
+          <h1 className={styles.heroTitle}>
+            OrganizaDaí é para <span className={styles.highlight}>quem transforma</span> trabalho em paixão
+          </h1>
+          <p className={styles.heroSubtitle}>
+            Seja você um profissional autônomo, clínica ou prestador de serviços, 
+            nossa plataforma foi desenhada para simplificar sua gestão e impulsionar seu crescimento.
           </p>
           
-          <div className={styles.ctaButtons}>
-            <a href="/cadastro" className={`${styles.ctaButton} ${styles.ctaButtonPrimary}`}>
-              <span>🚀</span>
-              Começar Gratuitamente
-            </a>
-            <a href="/precos" className={`${styles.ctaButton} ${styles.ctaButtonSecondary}`}>
-              <span>💰</span>
-              Ver Planos
-            </a>
+          <div className={styles.heroStats}>
+            <div className={styles.statItem}>
+              <span className={styles.statNumber}>10.000+</span>
+              <span className={styles.statLabel}>Profissionais Ativos</span>
+            </div>
+            <div className={styles.statItem}>
+              <span className={styles.statNumber}>50.000+</span>
+              <span className={styles.statLabel}>Clientes Atendidos</span>
+            </div>
+            <div className={styles.statItem}>
+              <span className={styles.statNumber}>98%</span>
+              <span className={styles.statLabel}>Satisfação</span>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </header>
+
+        <section className={styles.perfisSection}>
+          <h2 className={styles.sectionTitle}>Para Qual Perfil?</h2>
+          <p className={styles.sectionSubtitle}>
+            Conheça os perfis de profissionais que já transformaram seus negócios com o OrganizaDaí
+          </p>
+          
+          <div className={styles.perfisGrid}>
+            {perfis.map((perfil, index) => (
+              <div key={index} className={styles.perfilCard}>
+                <div className={styles.perfilIcon}>{perfil.icon}</div>
+                <h3 className={styles.perfilTitle}>{perfil.title}</h3>
+                <p className={styles.perfilDescription}>{perfil.description}</p>
+                
+                <ul className={styles.perfilFeatures}>
+                  {perfil.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className={styles.perfilFeature}>
+                      <span className={styles.perfilFeatureIcon}>✓</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.casosUsoSection}>
+          <h2 className={styles.sectionTitle1}>Como Pode Ser Usado</h2>
+          <p className={styles.sectionSubtitle1}>
+            Descubra as principais funcionalidades que vão revolucionar sua gestão diária
+          </p>
+          
+          <div className={styles.casosGrid}>
+            {casosUso.map((caso, index) => (
+              <div key={index} className={styles.casoCard}>
+                <div className={styles.casoIcon}>{caso.icon}</div>
+                <h3 className={styles.casoTitle}>{caso.title}</h3>
+                <p className={styles.casoDescription}>{caso.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.beneficiosSection}>
+          <h2 className={styles.sectionTitle}>Benefícios Transformadores</h2>
+          <p className={styles.sectionSubtitle}>
+            Mais do que um software, uma solução completa para seu negócio prosperar
+          </p>
+          
+          <div className={styles.beneficiosGrid}>
+            {beneficios.map((beneficio, index) => (
+              <div key={index} className={styles.beneficioCard}>
+                <div className={styles.beneficioNumber}>{beneficio.number}</div>
+                <h3 className={styles.beneficioTitle}>{beneficio.title}</h3>
+                <p className={styles.beneficioDescription}>{beneficio.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.ctaSection}>
+          <div className={styles.ctaContent}>
+            <h2 className={styles.ctaTitle}>
+              Pronto para transformar sua gestão?
+            </h2>
+            <p className={styles.ctaSubtitle}>
+              Junte-se a milhares de profissionais que já escolheram o OrganizaDaí 
+              para organizar e crescer seus negócios
+            </p>
+            
+            <div className={styles.ctaButtons}>
+              <a href="/cadastro" className={`${styles.ctaButton} ${styles.ctaButtonPrimary}`}>
+                <span>🚀</span>
+                Começar Gratuitamente
+              </a>
+              <a href="/precos" className={`${styles.ctaButton} ${styles.ctaButtonSecondary}`}>
+                <span>💰</span>
+                Ver Planos
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
   );
 }
