@@ -74,7 +74,7 @@
 .planoNome {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #005eb0;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -100,7 +100,7 @@
 .precoValor {
   font-size: 3.5rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #004d90;
   margin: 0 4px;
 }
 
@@ -199,7 +199,7 @@
   text-align: left;
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #0060b4;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
