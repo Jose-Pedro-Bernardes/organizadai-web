@@ -191,11 +191,28 @@
 }
 
 .casosUsoSection {
-  background-color: #d8f8ffdb;
+  background: rgba(255, 255, 255, 0.867);
   border: 2px solid #ffffff;
   border-radius: 24px;
-  padding: 60px 40px;
+  padding: 60px 50px;
   margin-bottom: 80px;
+}
+
+.casosTitle{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1da5ff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.casosSubtitle{
+  font-size: 1.25rem;
+  color: #3f7180;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
 }
 
 .casosGrid {
@@ -257,23 +274,6 @@
   font-size: 0.95rem;
   color: #888888;
   line-height: 1.5;
-}
-
-.casosTitle{
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #0099ff;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-
-.casosSubtitle{
-  font-size: 1.25rem;
-  color: #3f7180;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto 60px;
 }
 
 .beneficiosSection {
