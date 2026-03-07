@@ -181,8 +181,8 @@ export default function Paraqueme() {
         </section>
 
         <section className={styles.casosUsoSection}>
-          <h2 className={styles.sectionTitle1}>Como Pode Ser Usado</h2>
-          <p className={styles.sectionSubtitle1}>
+          <h2 className={styles.casosTitle}>Como Pode Ser Usado</h2>
+          <p className={styles.casosSubtitle}>
             Descubra as principais funcionalidades que vão revolucionar sua gestão diária
           </p>
           
