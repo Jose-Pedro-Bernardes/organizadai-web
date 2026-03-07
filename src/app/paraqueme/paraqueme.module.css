@@ -1,6 +1,26 @@
 .main{
-  background: linear-gradient(135deg, #1c609c 0%, #17a014 100%);
+  background: linear-gradient(135deg, #1f67a6e4 0%, #3fb63dda 100%);
   font-family: Arial, Helvetica, sans-serif;
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .paraquemeContainer {
@@ -10,27 +30,29 @@
 }
 
 .heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin-bottom: 80px;
+  gap: 40px;
 }
 
 .heroTitle {
   font-size: 3.5rem;
   font-weight: 700;
   color: #FFF;
-  margin-bottom: 24px;
   line-height: 1.2;
 }
 
 .heroTitle .highlight {
-  color: #77c0ff;
+  color: #1dfe89;
 }
 
 .heroSubtitle {
   font-size: 1.375rem;
   color: #e0e0e0;
   max-width: 700px;
-  margin: 0 auto 40px;
   line-height: 1.6;
 }
 
@@ -38,8 +60,8 @@
   display: flex;
   justify-content: center;
   gap: 60px;
-  margin-top: 40px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .statItem {
@@ -49,7 +71,7 @@
 .statNumber {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #77c0ff;
+  color: #3ae8ff;
   display: block;
   margin-bottom: 8px;
 }
@@ -71,22 +93,6 @@
   margin-bottom: 20px;
 }
 
-.sectionTitle1{
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #124aff;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.sectionSubtitle1{
-  font-size: 1.25rem;
-  color: #929191;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto 60px;
-}
-
 .sectionSubtitle {
   font-size: 1.25rem;
   color: #e0e0e0;
@@ -102,9 +108,9 @@
 }
 
 .perfilCard {
-  background: rgba(255, 255, 255, 0.897);
+  background: rgba(255, 255, 255, 0.867);
   border-radius: 16px;
-  padding: 32px;
+  padding: 40px 40px;
   text-align: center;
   border: 1px solid #e5e7eb;
   transition: all 0.3s ease;
@@ -129,15 +135,17 @@
 }
 
 .perfilCard:hover {
+  background: linear-gradient(135deg, #ffffff 0%, #8cdcff 100%);
   box-shadow: 0 12px 40px rgba(2, 107, 197, 0.15);
   transform: translateY(-4px);
+  transition: all 0.3s ease;
 }
 
 .perfilIcon {
   width: 80px;
   height: 80px;
   margin: 0 auto 24px;
-  background: linear-gradient(135deg, #026BC5 0%, #027ce7 100%);
+  background-color: #0099ff;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -149,7 +157,7 @@
 .perfilTitle {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #0088e3;
   margin-bottom: 12px;
 }
 
@@ -173,7 +181,7 @@
   gap: 12px;
   padding: 8px 0;
   font-size: 0.95rem;
-  color: #374151;
+  color: #6b7280;
 }
 
 .perfilFeatureIcon {
@@ -183,7 +191,8 @@
 }
 
 .casosUsoSection {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background-color: #d8f8ffdb;
+  border: 2px solid #ffffff;
   border-radius: 24px;
   padding: 60px 40px;
   margin-bottom: 80px;
@@ -197,11 +206,26 @@
 }
 
 .casoCard {
-  background: white;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(180, 240, 190, 0.9) 100%);
+  backdrop-filter: blur(15px);
   border-radius: 12px;
   padding: 24px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid rgba(85, 119, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(52, 46, 213, 0.15);
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.casoCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #2e68d5 0%, #a7ffd2 100%);
+  opacity: 0.8;
 }
 
 .casoCard:hover {
@@ -217,7 +241,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #026BC5;
+  color: #1dfe89;
   font-size: 1.5rem;
   margin-bottom: 16px;
 }
@@ -225,14 +249,31 @@
 .casoTitle {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #195aff;
   margin-bottom: 8px;
 }
 
 .casoDescription {
   font-size: 0.95rem;
-  color: #6b7280;
+  color: #888888;
   line-height: 1.5;
+}
+
+.casosTitle{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0099ff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.casosSubtitle{
+  font-size: 1.25rem;
+  color: #3f7180;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
 }
 
 .beneficiosSection {
@@ -258,6 +299,8 @@
 .beneficioCard:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ffffff 0%, #8cdcff 100%);
+  transition: all 0.3s ease;
 }
 
 .beneficioNumber {
@@ -277,13 +320,13 @@
 .beneficioTitle {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--text-primary);
+  color: #0080ff;
   margin-bottom: 12px;
 }
 
 .beneficioDescription {
   font-size: 0.95rem;
-  color: #6b7280;
+  color: #5d6676;
   line-height: 1.5;
 }
 
