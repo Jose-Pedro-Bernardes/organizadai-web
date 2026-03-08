@@ -3,6 +3,7 @@
 import { useState } from "react";
 import styles from "./precos.module.css";
 import Link from "next/link";
+import Header from "@/components/Header";
 
 export default function Precos() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -85,6 +86,7 @@ export default function Precos() {
 
   return (
     <main className={styles.main}>
+      <Header></Header>
       <div className={styles.precosContainer}>
         <header className={styles.headerSection}>
           <h1 className={styles.title}>Planos que crescem com seu negócio</h1>

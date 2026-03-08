@@ -1,6 +1,7 @@
 
 .main {
   width: 100%;
+  padding-top: 90px;
   background: linear-gradient(135deg, #1f6aac 0%, #149712 100%);
   font-family: Arial, Helvetica, sans-serif;
 }

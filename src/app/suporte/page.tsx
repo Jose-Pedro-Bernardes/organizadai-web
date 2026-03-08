@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./suporte.module.css";
+import Header from "@/components/Header";
 
 export default function Suporte() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -125,6 +126,7 @@ export default function Suporte() {
 
   return (
     <main className={styles.main}>
+      <Header></Header>
       <div className={styles.suporteContainer}>
         <header className={styles.headerSection}>
           <h1 className={styles.title}>Central de Ajuda</h1>

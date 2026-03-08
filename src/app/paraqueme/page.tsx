@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import styles from "./paraqueme.module.css";
 
 export default function Paraqueme() {
@@ -128,6 +129,7 @@ export default function Paraqueme() {
 
   return (
     <main className={styles.main}>
+      <Header></Header>
       <div className={styles.paraquemeContainer}>
         <header className={styles.heroSection}>
           <h1 className={styles.heroTitle}>
