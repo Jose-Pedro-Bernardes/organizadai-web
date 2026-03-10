@@ -1,0 +1,440 @@
+.funcionalidadesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.heroTitle .highlight {
+  color: #026BC5;
+}
+
+.heroSubtitle {
+  font-size: 1.375rem;
+  color: #6b7280;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.categoriasTabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.tabButton {
+  padding: 12px 24px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tabButton:hover {
+  border-color: #026BC5;
+  color: #026BC5;
+}
+
+.tabButton.active {
+  background: #026BC5;
+  color: white;
+  border-color: #026BC5;
+}
+
+.funcionalidadesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.funcionalidadeCard {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.funcionalidadeCard:hover {
+  box-shadow: 0 12px 40px rgba(2, 107, 197, 0.15);
+  transform: translateY(-4px);
+  border-color: #026BC5;
+}
+
+.funcionalidadeHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.funcionalidadeIcon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #026BC5 0%, #027ce7 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.funcionalidadeContent {
+  flex: 1;
+}
+
+.funcionalidadeTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.funcionalidadeBadge {
+  display: inline-block;
+  background: rgba(2, 107, 197, 0.1);
+  color: #026BC5;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.funcionalidadeDescription {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.funcionalidadeFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.funcionalidadeFeature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  font-size: 0.95rem;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.funcionalidadeFeature:last-child {
+  border-bottom: none;
+}
+
+.funcionalidadeFeatureIcon {
+  color: #54C752;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.detalhesSection {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 24px;
+  padding: 60px 40px;
+  margin-bottom: 80px;
+}
+
+.detalhesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.detalheCard {
+  text-align: center;
+  padding: 32px 24px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.detalheCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.detalheIcon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  background: linear-gradient(135deg, #54C752 0%, #6CCF6A 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.detalheTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.detalheDescription {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.integracoesSection {
+  margin-bottom: 80px;
+}
+
+.integracoesTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.integracoesSubtitle {
+  font-size: 1.25rem;
+  color: #6b7280;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+.integracoesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.integracaoCard {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.integracaoCard:hover {
+  border-color: #026BC5;
+  box-shadow: 0 8px 24px rgba(2, 107, 197, 0.1);
+  transform: translateY(-2px);
+}
+
+.integracaoIcon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 12px;
+  background: rgba(2, 107, 197, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #026BC5;
+  font-size: 1.5rem;
+}
+
+.integracaoName {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.ctaSection {
+  background: linear-gradient(135deg, #026BC5 0%, #027ce7 100%);
+  border-radius: 24px;
+  padding: 80px 40px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaSection::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+  animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(-30px, -30px) rotate(180deg); }
+}
+
+.ctaContent {
+  position: relative;
+  z-index: 1;
+}
+
+.ctaTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.ctaSubtitle {
+  font-size: 1.375rem;
+  opacity: 0.9;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaButton {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ctaButtonPrimary {
+  background: white;
+  color: #026BC5;
+}
+
+.ctaButtonPrimary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.ctaButtonSecondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.ctaButtonSecondary:hover {
+  background: white;
+  color: #026BC5;
+}
+
+@media (max-width: 768px) {
+  .funcionalidadesContainer {
+    padding: 60px 16px;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .categoriasTabs {
+    gap: 8px;
+  }
+  
+  .tabButton {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .funcionalidadesGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .funcionalidadeCard {
+    padding: 24px;
+  }
+  
+  .funcionalidadeHeader {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+  
+  .detalhesSection {
+    padding: 40px 24px;
+  }
+  
+  .detalhesGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .integracoesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  .ctaSection {
+    padding: 60px 24px;
+  }
+  
+  .ctaTitle {
+    font-size: 2rem;
+  }
+  
+  .ctaSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ctaButton {
+    width: 100%;
+    max-width: 300px;
+  }
+}
