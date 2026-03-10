@@ -1,5 +1,25 @@
 .main{
-  background: linear-gradient(135deg, #026BC5 0%, #59C757 100%);
+  background: linear-gradient(135deg, #1f67a6e4 0%, #3fb63dda 100%);
+  animation: gradientShift 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .loginContainer {

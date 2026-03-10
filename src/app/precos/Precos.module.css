@@ -2,8 +2,28 @@
 .main {
   width: 100%;
   padding-top: 90px;
-  background: linear-gradient(135deg, #1f6aac 0%, #149712 100%);
+  background: linear-gradient(135deg, #1f67a6e4 0%, #3fb63dda 100%);
   font-family: Arial, Helvetica, sans-serif;
+  animation: gradientShift 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .precosContainer {
