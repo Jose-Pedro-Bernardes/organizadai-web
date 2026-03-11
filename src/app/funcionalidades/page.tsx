@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./funcionalidades.module.css";
+import Header from "@/components/Header";
 
 export default function Funcionalidades() {
   const [activeTab, setActiveTab] = useState("todas");
@@ -139,119 +140,122 @@ export default function Funcionalidades() {
     : funcionalidades.filter(f => f.category.includes(activeTab));
 
   return (
-    <div className={styles.funcionalidadesContainer}>
-      <header className={styles.heroSection}>
-        <h1 className={styles.heroTitle}>
-          Funcionalidades que <span className={styles.highlight}>transformam</span> sua gestão
-        </h1>
-        <p className={styles.heroSubtitle}>
-          Descubra todas as ferramentas que o OrganizaDaí oferece para simplificar seu dia a dia e impulsionar seu crescimento
-        </p>
-      </header>
+    <main className={styles.main}>
+      <Header></Header>
+      <div className={styles.funcionalidadesContainer}>
+        <header className={styles.heroSection}>
+          <h1 className={styles.heroTitle}>
+            Funcionalidades que <span className={styles.highlight}>transformam</span> sua gestão
+          </h1>
+          <p className={styles.heroSubtitle}>
+            Descubra todas as ferramentas que o OrganizaDaí oferece para simplificar seu dia a dia e impulsionar seu crescimento
+          </p>
+        </header>
 
-      <div className={styles.categoriasTabs}>
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            className={`${styles.tabButton} ${activeTab === tab.id ? styles.active : ""}`}
-            onClick={() => setActiveTab(tab.id)}
-          >
-            {tab.label}
-          </button>
-        ))}
-      </div>
-
-      <section className={styles.funcionalidadesGrid}>
-        {filteredFuncionalidades.map((funcionalidade, index) => (
-          <div key={index} className={styles.funcionalidadeCard}>
-            <div className={styles.funcionalidadeHeader}>
-              <div className={styles.funcionalidadeIcon}>
-                {funcionalidade.icon}
-              </div>
-              <div className={styles.funcionalidadeContent}>
-                <span className={styles.funcionalidadeBadge}>
-                  {funcionalidade.badge}
-                </span>
-                <h3 className={styles.funcionalidadeTitle}>
-                  {funcionalidade.title}
-                </h3>
-              </div>
-            </div>
-            
-            <p className={styles.funcionalidadeDescription}>
-              {funcionalidade.description}
-            </p>
-            
-            <ul className={styles.funcionalidadeFeatures}>
-              {funcionalidade.features.map((feature, featureIndex) => (
-                <li key={featureIndex} className={styles.funcionalidadeFeature}>
-                  <span className={styles.funcionalidadeFeatureIcon}>✓</span>
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </section>
-
-      <section className={styles.detalhesSection}>
-        <h2 className={styles.integracoesTitle}>Diferenciais Estratégicos</h2>
-        <p className={styles.integracoesSubtitle}>
-          Mais do que um simples CRM, uma solução completa pensada para o sucesso do seu negócio
-        </p>
-        
-        <div className={styles.detalhesGrid}>
-          {detalhes.map((detalhe, index) => (
-            <div key={index} className={styles.detalheCard}>
-              <div className={styles.detalheIcon}>
-                {detalhe.icon}
-              </div>
-              <h3 className={styles.detalheTitle}>{detalhe.title}</h3>
-              <p className={styles.detalheDescription}>{detalhe.description}</p>
-            </div>
+        <div className={styles.categoriasTabs}>
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              className={`${styles.tabButton} ${activeTab === tab.id ? styles.active : ""}`}
+              onClick={() => setActiveTab(tab.id)}
+            >
+              {tab.label}
+            </button>
           ))}
         </div>
-      </section>
 
-      <section className={styles.integracoesSection}>
-        <h2 className={styles.integracoesTitle}>Integrações Poderosas</h2>
-        <p className={styles.integracoesSubtitle}>
-          Conecte suas ferramentas favoritas e tenha tudo em um único lugar
-        </p>
-        
-        <div className={styles.integracoesGrid}>
-          {integracoes.map((integracao, index) => (
-            <div key={index} className={styles.integracaoCard}>
-              <div className={styles.integracaoIcon}>
-                {integracao.icon}
+        <section className={styles.funcionalidadesGrid}>
+          {filteredFuncionalidades.map((funcionalidade, index) => (
+            <div key={index} className={styles.funcionalidadeCard}>
+              <div className={styles.funcionalidadeHeader}>
+                <div className={styles.funcionalidadeIcon}>
+                  {funcionalidade.icon}
+                </div>
+                <div className={styles.funcionalidadeContent}>
+                  <span className={styles.funcionalidadeBadge}>
+                    {funcionalidade.badge}
+                  </span>
+                  <h3 className={styles.funcionalidadeTitle}>
+                    {funcionalidade.title}
+                  </h3>
+                </div>
               </div>
-              <div className={styles.integracaoName}>{integracao.name}</div>
+              
+              <p className={styles.funcionalidadeDescription}>
+                {funcionalidade.description}
+              </p>
+              
+              <ul className={styles.funcionalidadeFeatures}>
+                {funcionalidade.features.map((feature, featureIndex) => (
+                  <li key={featureIndex} className={styles.funcionalidadeFeature}>
+                    <span className={styles.funcionalidadeFeatureIcon}>✓</span>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
-        </div>
-      </section>
+        </section>
 
-      <section className={styles.ctaSection}>
-        <div className={styles.ctaContent}>
-          <h2 className={styles.ctaTitle}>
-            Pronto para revolucionar sua gestão?
-          </h2>
-          <p className={styles.ctaSubtitle}>
-            Comece hoje mesmo e descubra como milhares de profissionais já transformaram seus negócios
+        <section className={styles.detalhesSection}>
+          <h2 className={styles.diferenciasTitle}>Diferenciais Estratégicos</h2>
+          <p className={styles.diferenciasSubtitle}>
+            Mais do que um simples CRM, uma solução completa pensada para o sucesso do seu negócio
           </p>
           
-          <div className={styles.ctaButtons}>
-            <a href="/cadastro" className={`${styles.ctaButton} ${styles.ctaButtonPrimary}`}>
-              <span>🚀</span>
-              Testar Gratuitamente
-            </a>
-            <a href="/precos" className={`${styles.ctaButton} ${styles.ctaButtonSecondary}`}>
-              <span>💰</span>
-              Ver Planos
-            </a>
+          <div className={styles.detalhesGrid}>
+            {detalhes.map((detalhe, index) => (
+              <div key={index} className={styles.detalheCard}>
+                <div className={styles.detalheIcon}>
+                  {detalhe.icon}
+                </div>
+                <h3 className={styles.detalheTitle}>{detalhe.title}</h3>
+                <p className={styles.detalheDescription}>{detalhe.description}</p>
+              </div>
+            ))}
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+
+        <section className={styles.integracoesSection}>
+          <h2 className={styles.integracoesTitle}>Integrações Poderosas</h2>
+          <p className={styles.integracoesSubtitle}>
+            Conecte suas ferramentas favoritas e tenha tudo em um único lugar
+          </p>
+          
+          <div className={styles.integracoesGrid}>
+            {integracoes.map((integracao, index) => (
+              <div key={index} className={styles.integracaoCard}>
+                <div className={styles.integracaoIcon}>
+                  {integracao.icon}
+                </div>
+                <div className={styles.integracaoName}>{integracao.name}</div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className={styles.ctaSection}>
+          <div className={styles.ctaContent}>
+            <h2 className={styles.ctaTitle}>
+              Pronto para revolucionar sua gestão?
+            </h2>
+            <p className={styles.ctaSubtitle}>
+              Comece hoje mesmo e descubra como milhares de profissionais já transformaram seus negócios
+            </p>
+            
+            <div className={styles.ctaButtons}>
+              <a href="/cadastro" className={`${styles.ctaButton} ${styles.ctaButtonPrimary}`}>
+                <span>🚀</span>
+                Testar Gratuitamente
+              </a>
+              <a href="/precos" className={`${styles.ctaButton} ${styles.ctaButtonSecondary}`}>
+                <span>💰</span>
+                Ver Planos
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
   );
 }
