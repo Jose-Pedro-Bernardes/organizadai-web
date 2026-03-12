@@ -94,28 +94,38 @@ export default function Funcionalidades() {
     }
   ];
 
-  const detalhes = [
-    {
-      icon: "⚡",
-      title: "Performance Otimizada",
-      description: "Sistema rápido e responsivo que funciona perfeitamente em qualquer dispositivo."
-    },
-    {
-      icon: "🔒",
-      title: "Segurança de Dados",
-      description: "Criptografia de ponta a ponta e backup automático para proteger suas informações."
-    },
-    {
-      icon: "🌐",
-      title: "Acesso 100% Online",
-      description: "Sem necessidade de instalação. Acesse de qualquer navegador com internet."
-    },
-    {
-      icon: "🎯",
-      title: "Foco no Usuário",
-      description: "Interface intuitiva desenvolvida pensando na experiência do profissional autônomo."
-    }
-  ];
+const detalhes = [
+  {
+    icon: "⚡",
+    title: "Performance Otimizada",
+    description: "Sistema rápido e responsivo que funciona perfeitamente em qualquer dispositivo."
+  },
+  {
+    icon: "🔒",
+    title: "Segurança de Dados",
+    description: "Criptografia de ponta a ponta e backup automático para proteger suas informações."
+  },
+  {
+    icon: "🌐",
+    title: "Acesso 100% Online",
+    description: "Sem necessidade de instalação. Acesse de qualquer navegador com internet."
+  },
+  {
+    icon: "🎯",
+    title: "Foco no Usuário",
+    description: "Interface intuitiva desenvolvida pensando na experiência do profissional autônomo."
+  },
+  {
+    icon: "📊",
+    title: "Controle e Organização",
+    description: "Gerencie clientes, compromissos e pagamentos em um único lugar, sem planilhas complicadas."
+  },
+  {
+    icon: "📅",
+    title: "Agenda Inteligente",
+    description: "Organize seus atendimentos com facilidade e tenha uma visão clara da sua rotina diária."
+  }
+];
 
   const integracoes = [
     { name: "Google Calendar", icon: "📅" },
