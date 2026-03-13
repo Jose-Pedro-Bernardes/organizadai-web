@@ -127,14 +127,16 @@ const detalhes = [
   }
 ];
 
-  const integracoes = [
-    { name: "Google Calendar", icon: "📅" },
-    { name: "WhatsApp", icon: "💬" },
-    { name: "Mercado Pago", icon: "💳" },
-    { name: "PicPay", icon: "💰" },
-    { name: "Email", icon: "📧" },
-    { name: "Zoom", icon: "📹" }
-  ];
+const integracoes = [
+  { name: "Google Calendar", icon: "📅" },
+  { name: "WhatsApp", icon: "💬" },
+  { name: "Mercado Pago", icon: "💳" },
+  { name: "PicPay", icon: "💰" },
+  { name: "Email", icon: "📧" },
+  { name: "Zoom", icon: "📹" },
+  { name: "Google Meet", icon: "🎥" },
+  { name: "Stripe", icon: "💵" }
+];
 
   const tabs = [
     { id: "todas", label: "Todas" },
