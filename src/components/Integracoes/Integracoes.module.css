@@ -1,0 +1,145 @@
+.integracoesSection {
+  padding: 100px 20px;
+  background: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #026BC5;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #4D5163;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.integracoesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.integracaoCard {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  padding: 30px 25px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.integracaoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.integracaoIcon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.integracaoName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.integracaoDescription {
+  font-size: 0.95rem;
+  color: #4D5163;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.ctaContainer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-radius: 16px;
+  border: 1px solid #bae6fd;
+}
+
+.ctaText {
+  font-size: 1.1rem;
+  color: #026BC5;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.ctaButton {
+  background: #026BC5;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: #027ce7;
+}
+
+@media (max-width: 768px) {
+  .integracoesSection {
+    padding: 60px 20px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .integracoesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .integracaoCard {
+    padding: 25px 20px;
+  }
+  
+  .integracaoIcon {
+    font-size: 2.5rem;
+  }
+  
+  .ctaContainer {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .integracoesGrid {
+    grid-template-columns: 1fr;
+  }
+}
