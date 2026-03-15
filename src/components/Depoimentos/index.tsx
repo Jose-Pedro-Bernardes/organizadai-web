@@ -1,4 +1,4 @@
-import styles from "./Depoimentos.module.css";
+import styles from "./depoimentos.module.css";
 
 export default function Depoimentos() {
   const depoimentos = [
