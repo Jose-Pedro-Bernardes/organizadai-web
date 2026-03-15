@@ -1,4 +1,4 @@
-import styles from "./Metricas.module.css";
+import styles from "./metricas.module.css";
 
 export default function Metricas() {
   const metricas = [
