@@ -1,0 +1,135 @@
+.depoimentosSection {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #54C752;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #4D5163;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.depoimentosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.depoimentoCard {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.depoimentoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.depoimentoHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  font-size: 3rem;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.depoimentoInfo {
+  flex: 1;
+}
+
+.depoimentoName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+.depoimentoRole {
+  font-size: 0.95rem;
+  color: #4D5163;
+  margin: 0;
+}
+
+.depoimentoRating {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 2px;
+}
+
+.starFilled {
+  color: #fbbf24;
+  font-size: 1.2rem;
+}
+
+.starEmpty {
+  color: #e5e7eb;
+  font-size: 1.2rem;
+}
+
+.depoimentoContent {
+  font-size: 1rem;
+  color: #4D5163;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .depoimentosSection {
+    padding: 60px 20px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .depoimentosGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .depoimentoCard {
+    padding: 25px 20px;
+  }
+  
+  .avatar {
+    font-size: 2.5rem;
+  }
+}
