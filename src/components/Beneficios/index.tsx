@@ -1,4 +1,4 @@
-import styles from "./Beneficios.module.css";
+import styles from "./beneficios.module.css";
 
 export default function Beneficios() {
 const beneficios = [
