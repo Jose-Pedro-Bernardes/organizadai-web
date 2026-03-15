@@ -1,0 +1,119 @@
+.metricasSection {
+  padding: 80px 20px;
+  background: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #026BC5;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #4D5163;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.metricasGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.metricaCard {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metricaCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.metricaNumber {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #026BC5;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.metricaLabel {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.metricaDescription {
+  font-size: 0.95rem;
+  color: #4D5163;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .metricasSection {
+    padding: 60px 20px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .metricasGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .metricaNumber {
+    font-size: 2.5rem;
+  }
+  
+  .metricaLabel {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .metricasGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .metricaCard {
+    padding: 25px 15px;
+  }
+  
+  .metricaNumber {
+    font-size: 2.2rem;
+  }
+}
