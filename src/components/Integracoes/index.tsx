@@ -1,4 +1,4 @@
-import styles from "./Integracoes.module.css";
+import styles from "./integracoes.module.css";
 
 export default function Integracoes() {
   const integracoes = [
