@@ -1,0 +1,311 @@
+.ctaSection {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #026BC5 0%, #027ce7 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.05"><polygon points="30 30 0 0 60 0"/></g></g></svg>');
+  opacity: 0.3;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.ctaContent {
+  color: white;
+}
+
+.ctaHeader {
+  margin-bottom: 40px;
+}
+
+.ctaBadge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.ctaTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #54C752;
+  font-weight: 700;
+}
+
+.ctaSubtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.ctaFeatures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.featureIcon {
+  color: #54C752;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.ctaButtonPrimary {
+  background: #54C752;
+  color: white;
+  text-decoration: none;
+  padding: 18px 30px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(84, 199, 82, 0.3);
+}
+
+.ctaButtonPrimary:hover {
+  background: #4ab542;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(84, 199, 82, 0.4);
+}
+
+.ctaButtonSecondary {
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  padding: 18px 30px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.ctaButtonSecondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.trustIndicators {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trustText {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.trustHighlight {
+  color: #54C752;
+  font-weight: 700;
+}
+
+.paymentMethods {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.paymentIcons {
+  display: flex;
+  gap: 8px;
+  font-size: 1.2rem;
+}
+
+.ctaVisual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visualCard {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+  transform: rotate(3deg);
+  transition: transform 0.3s ease;
+}
+
+.visualCard:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.mockupHeader {
+  background: #f8fafc;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.mockupDots {
+  display: flex;
+  gap: 6px;
+}
+
+.mockupDots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #e2e8f0;
+}
+
+.mockupDots span:first-child {
+  background: #ef4444;
+}
+
+.mockupDots span:nth-child(2) {
+  background: #f59e0b;
+}
+
+.mockupDots span:nth-child(3) {
+  background: #10b981;
+}
+
+.mockupTitle {
+  font-weight: 600;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.mockupContent {
+  padding: 25px 20px;
+}
+
+.mockupRow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.mockupRow:last-child {
+  border-bottom: none;
+}
+
+.mockupIcon {
+  font-size: 1.5rem;
+  width: 40px;
+  text-align: center;
+}
+
+.mockupText {
+  font-size: 0.95rem;
+  color: #475569;
+  font-weight: 500;
+}
+
+@media (max-width: 968px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .ctaTitle {
+    font-size: 2.5rem;
+  }
+  
+  .ctaButtons {
+    justify-content: center;
+  }
+  
+  .ctaFeatures {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto 40px;
+  }
+  
+  .trustIndicators {
+    align-items: center;
+  }
+  
+  .visualCard {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 640px) {
+  .ctaSection {
+    padding: 60px 20px;
+  }
+  
+  .ctaTitle {
+    font-size: 2rem;
+  }
+  
+  .ctaSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .ctaButtons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .ctaButtonPrimary,
+  .ctaButtonSecondary {
+    justify-content: center;
+    padding: 16px 24px;
+  }
+  
+  .visualCard {
+    max-width: 300px;
+  }
+}
