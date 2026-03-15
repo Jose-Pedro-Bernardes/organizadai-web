@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./CTAFinal.module.css";
+import styles from "./ctafinal.module.css";
 
 export default function CTAFinal() {
   return (
