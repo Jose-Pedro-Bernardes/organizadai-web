@@ -2,6 +2,11 @@ import styles from "./page.module.css";
 import Header from "@/components/Header"
 import HeroSection from "@/components/HeroSection"
 import SobreNos from "@/components/SobreNos"
+import Beneficios from "@/components/Beneficios"
+import Metricas from "@/components/Metricas"
+import Depoimentos from "@/components/Depoimentos"
+import Integracoes from "@/components/Integracoes"
+import CTAFinal from "@/components/CTAFinal"
 
 
 export default function Home() {
@@ -10,7 +15,12 @@ export default function Home() {
       <Header></Header>
       <main className={styles.main}>
         <HeroSection></HeroSection>
+        <Beneficios></Beneficios>
+        <Metricas></Metricas>
+        <Depoimentos></Depoimentos>
+        <Integracoes></Integracoes>
         <SobreNos></SobreNos>
+        <CTAFinal></CTAFinal>
       </main>
       <footer></footer>
     </div>
