@@ -1,26 +1,57 @@
 .heroSection{
     margin-top: 70px;
-    padding: 100px 0;
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)),
+    linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)),
     url("/heroImageBG.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 90vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.heroContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    min-height: 600px;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.heroBadge {
+    display: inline-block;
+    background: #54C752;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: fit-content;
+    margin-bottom: 10px;
 }
 
 .title {
-    width: 850px;
-    font-size: 3.125rem;
-    text-align: center;
-    font-weight: 600;
+    font-size: 3.5rem;
+    font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 30px;
-    line-height: 60px;
+    line-height: 1.1;
+    margin: 0;
 }
 
 .titleItalian{
@@ -37,102 +68,341 @@
 }
 
 .heroDescription{
-    width: 720px;
     font-size: 1.25rem;
-    text-align: center;
     color: #4D5163;
-    margin-bottom: 40px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.heroStats {
+    display: flex;
+    gap: 40px;
+    margin: 10px 0;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.statNumber {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #026BC5;
+    line-height: 1;
+}
+
+.statLabel {
+    font-size: 0.9rem;
+    color: #4D5163;
+    margin-top: 5px;
+}
+
+.heroButtons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .CTAcadastro{
-    width: 387px;
-    height: 86px;
     background-color: #026BC5;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.563rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    gap: 25px;
+    gap: 15px;
     transition: 0.3s;
     border-radius: 10px;
+    padding: 18px 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(2, 107, 197, 0.3);
 }
 
 .CTAcadastro:hover{
     background-color: #027ce7;
-    gap: 35px;
+    gap: 20px;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(2, 107, 197, 0.4);
 }
 
+.CTAdemo {
+    background: transparent;
+    color: #026BC5;
+    border: 2px solid #026BC5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    gap: 10px;
+    transition: 0.3s;
+    border-radius: 10px;
+    padding: 16px 24px;
+    text-decoration: none;
+}
+
+.CTAdemo:hover {
+    background: #026BC5;
+    color: white;
+    transform: translateY(-2px);
+}
 
 .setaCadastro{
-    width: 26;
-    height: 26;
+    width: 20px;
+    height: 20px;
 }
 
+.trustIndicators {
+    margin-top: 10px;
+}
+
+.trustText {
+    font-size: 0.9rem;
+    color: #4D5163;
+    margin: 0;
+}
+
+.trustHighlight {
+    color: #026BC5;
+    font-weight: 600;
+}
+
+.heroVisual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboardPreview {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+    overflow: hidden;
+    transform: rotate(2deg);
+    transition: transform 0.3s ease;
+}
+
+.dashboardPreview:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.dashboardHeader {
+    background: #f8fafc;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.dashboardDots {
+    display: flex;
+    gap: 6px;
+}
+
+.dashboardDots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #e2e8f0;
+}
+
+.dashboardDots span:first-child {
+    background: #ef4444;
+}
+
+.dashboardDots span:nth-child(2) {
+    background: #f59e0b;
+}
+
+.dashboardDots span:nth-child(3) {
+    background: #10b981;
+}
+
+.dashboardTitle {
+    font-weight: 600;
+    color: #475569;
+    font-size: 0.9rem;
+}
+
+.dashboardContent {
+    padding: 25px 20px;
+}
+
+.dashboardRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.dashboardRow:last-child {
+    border-bottom: none;
+}
+
+.dashboardIcon {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.dashboardText {
+    flex: 1;
+    font-size: 1rem;
+    color: #475569;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.dashboardBadge {
+    background: #54C752;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.dashboardAmount {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #026BC5;
+}
+
+.dashboardGrowth {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #54C752;
+}
 
 @media (max-width: 980px) {
+    .heroSection{
+        padding: 40px 20px;   
+        min-height: auto;
+    }
 
-.heroSection{
-    padding: 40px 30px;   
-}
+    .heroContent {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
 
-.title {
-    width: 100%;
-    font-size: 3rem;
-}
+    .heroText {
+        align-items: center;
+    }
 
-.heroDescription{
-    width: 100%;
-}
+    .title {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
 
-.CTAcadastro{
-    width: 357px;
-    height: 86px;
-}
+    .heroDescription {
+        font-size: 1.1rem;
+    }
 
+    .heroStats {
+        justify-content: center;
+    }
 
+    .heroButtons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .CTAcadastro {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .CTAdemo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .dashboardPreview {
+        max-width: 400px;
+    }
 }
 
 @media (max-width: 750px){
-
     .heroSection{
-        padding: 40px 30px;   
+        padding: 30px 20px;   
     }
 
-.title {
-    font-size: 2.8rem;
-     line-height: 50px;
-}
-
-.heroDescription{
-    font-size: 1.1rem;
-}
-
-}
-
-@media(max-width: 560px){
-
-    .heroSection{
-        padding: 40px 30px;   
-    }
-
-    .title{
-        font-size: 2.3rem;
+    .title {
+        font-size: 2.5rem;
+        line-height: 1.2;
     }
 
     .heroDescription{
         font-size: 1rem;
     }
 
+    .heroStats {
+        gap: 30px;
+    }
+
+    .statNumber {
+        font-size: 1.8rem;
+    }
+
+    .dashboardPreview {
+        max-width: 350px;
+    }
+}
+
+@media(max-width: 560px){
+    .heroSection{
+        padding: 30px 15px;   
+    }
+
+    .title{
+        font-size: 2.2rem;
+    }
+
+    .heroDescription{
+        font-size: 0.95rem;
+    }
+
+    .heroStats {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .stat {
+        align-items: center;
+    }
+
     .CTAcadastro{
-        width: 320px;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+        padding: 16px 24px;
+    }
+
+    .CTAdemo {
+        font-size: 1rem;
+        padding: 14px 20px;
     }
 
     .setaCadastro{
-        width: 20;
-        height: 20;
+        width: 18px;
+        height: 18px;
+    }
+
+    .trustText {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .dashboardPreview {
+        max-width: 300px;
     }
 }
 
@@ -140,12 +410,12 @@
     .title{
         font-size: 2rem;
     }
+    
     .heroDescription{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
-    .cadastro{
-        width: 100%;
-        padding: 0 20px;
+    .dashboardPreview {
+        max-width: 280px;
     }
 }
