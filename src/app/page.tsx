@@ -1,7 +1,6 @@
 import styles from "./page.module.css";
 import Header from "@/components/Header"
 import HeroSection from "@/components/HeroSection"
-import SobreNos from "@/components/SobreNos"
 import Beneficios from "@/components/Beneficios"
 import Metricas from "@/components/Metricas"
 import Depoimentos from "@/components/Depoimentos"
@@ -19,7 +18,6 @@ export default function Home() {
         <Metricas></Metricas>
         <Depoimentos></Depoimentos>
         <Integracoes></Integracoes>
-        <SobreNos></SobreNos>
         <CTAFinal></CTAFinal>
       </main>
       <footer></footer>
