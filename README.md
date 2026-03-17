@@ -33,8 +33,8 @@ Este projeto ainda está em desenvolvimento, mas já possui a estrutura base par
 
 ## 📌 Funcionalidades planejadas
 
-- [ ] Cadastro e login de usuário
-- [ ] Dashboard inicial
+- [✅] Cadastro e login de usuário
+- [✅] Dashboard inicial
 - [ ] Cadastro de clientes
 - [ ] Cadastro de serviços
 - [ ] Agenda de atendimentos
