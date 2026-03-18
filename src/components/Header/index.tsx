@@ -70,8 +70,8 @@ export default function Header() {
       </div>
       {menuOpen && (
         <nav className={styles.MenuNavMobile}>
-          <Link href="/sobre" className={styles.linkNav} aria-label="Saiba mais sobre o OrganizaDaí">Sobre nós</Link>
-          <Link href="/solucoes" className={styles.linkNav} aria-label="Conheça nossas soluções">Soluções</Link>
+          <Link href="/funcionalidades" className={styles.linkNav} aria-label="Conheça nossas Funcionalidades">Sobre nós</Link>
+          <Link href="/paraqueme" className={styles.linkNav} aria-label="Saiba mais sobre o OrganizaDaí">Soluções</Link>
           <Link href="/precos" className={styles.linkNav} aria-label="Veja nossos planos e preços">Preços</Link>
           <Link href="/suporte" className={`${styles.linkNav} ${styles.linkNavLast}`} aria-label="Acesse nosso suporte">Suporte</Link>
 
